@@ -22,15 +22,8 @@ public class Day1 {
 
         // this loop will access every character in the String
         for (int i = 0; i < input.length(); i++) {
-
-            // extract a single character
-            char character = input.charAt(i);
-
-            // Determine whether this character will make us go up or down a floor
-            if (character == '(') currentFloor++;
-            else if (character == ')') currentFloor--;
-            
-        } // end loop
+            (input.charAt(i) == '(') ? currentFloor++ : currentFloor--;  
+        } 
 
         // Output the result to enter into the website!
         System.out.println(currentFloor);
